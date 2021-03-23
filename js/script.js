@@ -17,7 +17,7 @@ var fizzBuzz = "FizzBuzz";
 
 for ( var i = 1; i <= 100; i++ ) {
 
-    numero = [i];
+    numero = i;
 
     //trova i multipli di 3 che di 5 stampi FizzBuzz
     if ( ( numero % 3 == 0 ) && ( numero % 5 == 0 ) ) {
