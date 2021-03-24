@@ -7,7 +7,7 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 //Stampa i numeri da 1 a 100
 
-var numero = -1;
+var numero;
 
 var fizz = "Fizz";
 
@@ -17,25 +17,26 @@ var fizzBuzz = "FizzBuzz";
 
 for ( var i = 1; i <= 100; i++ ) {
 
-    numero = i;
+    numero = i.toString();
 
     //trova i multipli di 3 che di 5 stampi FizzBuzz
     if ( ( numero % 3 == 0 ) && ( numero % 5 == 0 ) ) {
 
         numero = fizzBuzz;
 
-    //trova i multipli di 3 e scrivi fizz
+        //trova i multipli di 3 e scrivi fizz
     } else if ( numero % 3 == 0 ) {
 
         numero = fizz;
 
-    //trova i multipli di 5 e scrivi buzz
+        //trova i multipli di 5 e scrivi buzz
     } else if ( numero % 5 == 0 ) {
 
         numero = buzz;
 
+    } else {
+        //Output dei numeri attraverso console.log
+        console.log( numero );
     }
-    //Output dei numeri attraverso console.log
-    console.log( numero );
 }
 
